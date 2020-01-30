@@ -18,3 +18,11 @@ header {
 header, main, footer {
     border : 1px solid black;
 }
+
+main {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: khaki;
+}
