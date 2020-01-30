@@ -1,0 +1,42 @@
+#pied-page {
+
+    section {
+        //Selectionne 1 par 1 les ul du pied-page
+        ul:nth-child(1) {
+            @extend .background_orange;
+        }
+
+        ul:nth-child(2) {
+            @extend .background_jaune;
+        }
+
+        ul:nth-child(3) {
+            @extend .background_red;
+        }
+
+        ul:nth-child(4) {
+            @extend .background_kindaRed;
+        }
+    }
+
+}
+//Les choix de styles disponibles
+.background_orange {
+    color: royalblue;
+    background-color : orange;
+}
+
+.background_red {
+    color: purple;
+    background-color : red;
+}
+
+.background_jaune {
+    color: green;
+    background-color : yellow;
+}
+
+.background_kindaRed {
+    color: rosybrown;
+    background-color : rgb(148, 22, 0);
+}

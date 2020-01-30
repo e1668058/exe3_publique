@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    flex-direction: column;
+    
+    .search {
+        background-color : darkgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 10%;
+        
+        //La bar de recherche est invisible
+        .searchBar {
+            background-color: orange;
+        }
+        //QUand tu check la bar de recherche devient visible
+        .chk:checked ~.searchBar{
+            background-color: blue;
+        }
+
+        p {
+            background-color : blue;
+            width: 30%;
+            opacity: 0.9;
+            @include p_size();
+        }
+
+        i {
+            color : black;
+            margin-right: 1%;
+
+            &:hover {
+                cursor: pointer;
+
+                    
+            }
+        }
+    }
+}
+
+.barreInfo {
+    background-color: black;
+
+    p {
+        font-size : 0.7em;
+        float: right;
+        margin-right: 1.5%;
+    }
+}
+
